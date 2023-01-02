@@ -4,29 +4,29 @@ include_once("dao/categoria_dao.php");
 
 class CategoriaController {
 
-    private $alunoDAO;
+    private $categoriaDAO;
 
     public function __construct() {
-        $this->alunoDAO = new AlunoDAO();
+        $this->categoriaDAO = new CategoriaDAO();
     }
 
     public function listar() {
-        return $this->alunoDAO->list();
+        return $this->categoriaDAO->list();
     }
 
-    public function buscarPorId($idAluno) {
-        return $this->alunoDAO->findById($idAluno);
+    public function buscarPorId($id) {
+        return $this->categoriaDAO->findById($id);
     }
 
-    public function salvar($aluno) {
-        $this->alunoDAO->save($aluno);
+    public function salvar($categoria) {
+        $this->$categoriaDAO->save($categoria);
     }
-    public function atualizar($aluno) {
-        $this->alunoDAO->update($aluno);
+    public function atualizar($categoria) {
+        $this->$categoriaDAO->update($categoria);
     }
 
-    public function excluir($aluno) {
-        $this->alunoDAO->delete($aluno);
+    public function excluir($categoria) {
+        $this->$categoriaDAO->delete($categoria);
     }
 }
 

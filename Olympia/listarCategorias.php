@@ -1,5 +1,7 @@
 <?php
-
+include_once("util/conexao.php");
+include_once("controller/categoriaController.php");
+include_once("view/tabelaCategorias.php");
 
 ?>
 
@@ -15,6 +17,11 @@
     <?php
         include_once("bootstrap/navbar.php");
     ?>
-    
+    <?php
+        $categoriaCont = new CategoriaController();
+        $categorias = $categoriaCont->listar(); 
+        
+        CategoriaHTML::desenhaTabela($categorias);
+    ?>
 </body>
 </html>

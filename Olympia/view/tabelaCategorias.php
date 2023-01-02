@@ -13,20 +13,20 @@ class CategoriaHTML {
         foreach ($categorias as $categoria):
             echo "<tr>";
             echo "<td>". $categoria->getNome() ."</td>";
-            
+            /*
             //Editar
             echo "<td>". 
-                "<a href='alunos_alt.php?id=". $categoria->getIdCategoria() . "'>".
+                "<a href='?id=". $categoria->getId() . "'>".
                 "<img src='img/btn_editar.png'>" . "</a>".
             "</td>";
             
             //Excluir
             echo "<td>". 
-                "<a href='alunos_del_exec.php?id=". $categoria->getIdCategoria() . 
+                "<a href='?id=". $categoria->getIdCategoria() . 
                 "' onclick='return confirm(\"Confirma a exclusão do aluno?\");'".
                 ">".
                 "<img src='img/btn_excluir.png'>" . "</a>".
-            "</td>";
+            "</td>";*/
             
             echo "</tr>";
         endforeach;
