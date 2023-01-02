@@ -31,7 +31,7 @@
                         </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <a class="card-link">Listar Categorias</a>
+                            <a class="card-link" href="./listarCategorias.php">Listar Categorias</a>
                         </li>
                         <li class="list-group-item">
                             <a class="card-link">Cadastrar Categoria</a>
