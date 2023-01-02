@@ -4,10 +4,11 @@ class CategoriaHTML {
 
     public static function desenhaTabela($categorias) {
         echo "<table class='table table-striped table-bordered'>";
-        
+
         echo "<thead>";
         echo "<th scope='col'>Nome</th>";
         echo "</thead>";
+        echo "</div>";
         
         echo "<tbody>";
         foreach ($categorias as $categoria):

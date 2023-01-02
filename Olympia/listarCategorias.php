@@ -17,11 +17,19 @@ include_once("view/tabelaCategorias.php");
     <?php
         include_once("bootstrap/navbar.php");
     ?>
-    <?php
-        $categoriaCont = new CategoriaController();
-        $categorias = $categoriaCont->listar(); 
+
+
+    <div class="mx-2 my-2">
+
+        <p class='text-center' style="font-weight : bold">CATEGORIAS</p>
+
+        <?php
+            $categoriaCont = new CategoriaController();
+            $categorias = $categoriaCont->listar();
         
-        CategoriaHTML::desenhaTabela($categorias);
-    ?>
+            CategoriaHTML::desenhaTabela($categorias);
+        ?>
+    </div>
+
 </body>
 </html>
